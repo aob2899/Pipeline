@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout gitrepo
-        uses: action/checkout@v3
+        uses: actions/checkout@v3
       - name: calculate 1 + 1
         run: expr 1 + 1 > Result.txt
       - name: store results

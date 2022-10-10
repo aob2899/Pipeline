@@ -6,14 +6,13 @@ on:
 jobs:
   first-job:
     runs-on: ubuntu-latest
-    name: Save output
     steps:
       - name: checkout gitrepo
-      - uses: action/checkout@v3
+        uses: action/checkout@v3
       - name: calculate 1 + 1
         run: expr 1 + 1 > Result.txt
       - name: store results
-      - uses: actions/upload-artifact@v3.1.0
+        uses: actions/upload-artifact@v3.1.0
         with: 
           name: result-log-file
           path: Result.txt

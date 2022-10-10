@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: action/checkout@v3
       - name: calculate 1 + 1
-      - shell: bash
         run: expr 1 + 1 > Result.txt
       - name: store results
       - uses: actions/upload-artifact@v3.1.0

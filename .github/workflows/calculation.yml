@@ -1,4 +1,8 @@
-on: push
+name: calculation
+on: 
+  push: 
+    branches: 
+      - 'main'
 jobs:
   first-job:
     runs-on: windows-latest
@@ -12,4 +16,5 @@ jobs:
         with: 
           name: output-log-file
           path: output.txt
-    
+          
+
